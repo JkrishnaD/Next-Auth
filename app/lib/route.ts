@@ -9,11 +9,7 @@ export const NEXT_AUTH = ({
         name: "Email",
         credentials: {
           username: { label: "Username", type: "text", placeholder: "email" },
-          password: {
-            label: "Password",
-            type: "password",
-            placeholder: "password",
-          },
+          password: { label: "Password", type: "password", placeholder: "password" },
         },
         async authorize(credentials: any) {
           console.log(credentials);
@@ -24,6 +20,7 @@ export const NEXT_AUTH = ({
           };
         },
       }),
+      //OAuth Providers
         GitHubProvider({
           clientId: process.env.GITHUB_ID || "",
           clientSecret: process.env.GITHUB_SECRET || ""

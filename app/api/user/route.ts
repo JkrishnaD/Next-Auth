@@ -3,7 +3,7 @@ import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
 
 export async function GET(){
-    const session = await getServerSession(NEXT_AUTH);
+    const session = await getServerSession(NEXT_AUTH); // to get the user data object
     return NextResponse.json({
         session
     })

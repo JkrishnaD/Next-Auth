@@ -4,7 +4,7 @@ import { json } from "stream/consumers";
 // import { useRouter } from "next/navigation"
 
 export const Appbar = () => {
-    const session = useSession();
+    const session = useSession(); // to get the details
     return <div className="bg-black h-screen text-white">
         <div className="flex justify-around border-b-0">
             <button onClick={() => {
